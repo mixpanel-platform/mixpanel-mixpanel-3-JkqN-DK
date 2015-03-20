@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/css/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.css">
-    <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
+    <script src="http://ilya.dev.mixpanel.org/libs/mixpanel-platform/build/mixpanel-platform.min.js"></script>
   </head>
   <body class="mixpanel-platform-body">
     <div class="mixpanel-platform-section">
@@ -16,7 +16,7 @@
     </div>
     <div id="table"></div>
     <script>
-      MP.api.ready(function() {
+      // MP.api.ready(function() {
         var eventSelect = $('#eventSelect').MPEventSelect();
         var propSelect  = $('#propSelect').MPPropertySelect();
         var dateSelect  = $('#dateSelect').MPDatepicker();
@@ -45,7 +45,7 @@
         });
         propSelect.on('change', runQuery);
         dateSelect.on('change', runQuery);
-      });
+      // });
     </script>
   </body>
 </html>
